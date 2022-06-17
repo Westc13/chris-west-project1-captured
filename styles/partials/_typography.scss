@@ -1,0 +1,76 @@
+// Import Font Families
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+h1, h2, h3, h4, .headingFont {
+    font-family: $allOtherFont;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6.9rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.1rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.readMore,
+.findOutMore {
+    background-color: $seaGreen;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button {
+    background-color: $seaGreen;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+}
