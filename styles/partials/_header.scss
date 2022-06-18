@@ -1,0 +1,52 @@
+header {
+    background-image: url("../assets/header-image.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.headerBoxImg {
+    width: 50%;
+    min-height: 100vh;
+    border-left: 20px solid $canary;
+    border-top: 40px solid $canary;
+    border-bottom: 40px solid $canary;
+    background-image: url("../assets/header-box-image.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;    
+}
+
+.navigation .headingFont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+    margin: 30px 0 200px;
+}
+
+.navBar a {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 500px 0;
+}
+
+
+
