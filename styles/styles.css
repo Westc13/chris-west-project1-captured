@@ -252,11 +252,11 @@ h1, h2, h3, h4, .headingFont {
 }
 
 h1 {
-  font-size: 6.9rem;
+  font-size: 6.5rem;
   text-align: center;
   padding-top: 150px;
   position: absolute;
-  left: 21%;
+  left: 20%;
   z-index: 10;
 }
 
@@ -339,7 +339,7 @@ img {
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -361,7 +361,7 @@ header {
   background-image: url("../assets/header-box-image.jpg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   right: 0;
 }
@@ -408,4 +408,72 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 500px 0;
+}
+
+.script {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 300px 0 100px;
+}
+
+.unlockYourSkills,
+.gettingNewGear {
+  background-color: #fafafa;
+}
+
+.unlockYourSkills .wrapper,
+.gettingNewGear .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.textContainer {
+  width: 46%;
+  padding: 20px 10px;
+  border: 2px solid green;
+}
+
+.emptyImg {
+  width: 46%;
+  height: 18.75vw;
+  background-color: #fafafa;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+}
+
+.leftImg {
+  background-image: url("../assets/left-image.jpg");
+  -webkit-box-shadow: 20px 10px #fdfa69;
+          box-shadow: 20px 10px #fdfa69;
+}
+
+.rightImg {
+  background-image: url("../assets/right-image.jpg");
+  -webkit-box-shadow: -20px 10px #fdfa69;
+          box-shadow: -20px 10px #fdfa69;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }

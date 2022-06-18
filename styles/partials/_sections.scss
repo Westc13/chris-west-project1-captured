@@ -1,0 +1,50 @@
+.script {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 300px 0 100px;
+}
+
+.unlockYourSkills,
+.gettingNewGear {
+    background-color: $white;
+}
+
+.unlockYourSkills .wrapper,
+.gettingNewGear .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textContainer {
+    width: 46%;
+    padding: 20px 10px;
+    border: 2px solid green;
+}
+.emptyImg {
+    width: 46%;
+    height: calc(25vw * 75 / 100);
+    background-color: $white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
+
+.leftImg {
+    background-image: url("../assets/left-image.jpg");
+    box-shadow: 20px 10px $canary;
+}
+
+.rightImg {
+    background-image: url("../assets/right-image.jpg");
+    box-shadow: -20px 10px $canary;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
