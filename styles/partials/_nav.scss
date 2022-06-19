@@ -1,0 +1,20 @@
+.navigation .headingFont,
+.blogHeader .headingFont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navBar,
+.blogHeader .navBar {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+    margin: 30px 0 200px;
+}
+
+.navBar a {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 29px;
+    text-align: center;
+}
