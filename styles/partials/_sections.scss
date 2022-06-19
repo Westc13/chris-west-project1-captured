@@ -34,12 +34,12 @@
 
 .leftImg {
     background-image: url("../assets/left-image.jpg");
-    box-shadow: 20px 10px $canary;
+    box-shadow: 20px 20px $canary;
 }
 
 .rightImg {
     background-image: url("../assets/right-image.jpg");
-    box-shadow: -20px 10px $canary;
+    box-shadow: -20px 20px $canary;
 }
 
 .social {
@@ -61,7 +61,57 @@
     background-color: $seaGreen;
     border-radius: 50%;
     border: 10px solid $seaGreen;
+    margin-right: 10px;
 }
+
+.banner {
+    width: 100vw;
+    height: 400px;
+    background-image: url("../assets/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.thisMonthProfile .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.smallBox {
+    width: 30%;
+    background-image: url("../assets/small-box.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 20px $canary;
+}
+
+.textContainer {
+    width: 65%;
+}
+
+.gallery {
+    width: 100%;
+    background-color: $white;
+    padding: 100px 0;
+}
+
+.gallery .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.galleryImg {
+    display: inline-block;
+    max-width: 30%;
+}
+
+
+
+
+
 
 
 

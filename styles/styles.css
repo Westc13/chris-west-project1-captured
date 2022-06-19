@@ -339,7 +339,7 @@ img {
 
 .wrapper {
   max-width: 1260px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -460,14 +460,14 @@ header {
 
 .leftImg {
   background-image: url("../assets/left-image.jpg");
-  -webkit-box-shadow: 20px 10px #fdfa69;
-          box-shadow: 20px 10px #fdfa69;
+  -webkit-box-shadow: 20px 20px #fdfa69;
+          box-shadow: 20px 20px #fdfa69;
 }
 
 .rightImg {
   background-image: url("../assets/right-image.jpg");
-  -webkit-box-shadow: -20px 10px #fdfa69;
-          box-shadow: -20px 10px #fdfa69;
+  -webkit-box-shadow: -20px 20px #fdfa69;
+          box-shadow: -20px 20px #fdfa69;
 }
 
 .social {
@@ -495,4 +495,58 @@ header {
   background-color: #4ceea7;
   border-radius: 50%;
   border: 10px solid #4ceea7;
+  margin-right: 10px;
+}
+
+.banner {
+  width: 100vw;
+  height: 400px;
+  background-image: url("../assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thisMonthProfile .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+.smallBox {
+  width: 30%;
+  background-image: url("../assets/small-box.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 20px 20px #fdfa69;
+          box-shadow: 20px 20px #fdfa69;
+}
+
+.textContainer {
+  width: 65%;
+}
+
+.gallery {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 100px 0;
+}
+
+.gallery .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galleryImg {
+  display: inline-block;
+  max-width: 30%;
 }
