@@ -45,6 +45,26 @@
 .social {
     display: flex;
     flex-wrap: wrap;
+    padding: 100px 0;
 }
+
+.topPicks, 
+.community,
+.blog,
+.getInTouch {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-solid {
+    background-color: $seaGreen;
+    border-radius: 50%;
+    border: 10px solid $seaGreen;
+}
+
+
+
+
 
 

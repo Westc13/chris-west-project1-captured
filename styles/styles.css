@@ -476,4 +476,23 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.topPicks,
+.community,
+.blog,
+.getInTouch {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.fa-solid {
+  background-color: #4ceea7;
+  border-radius: 50%;
+  border: 10px solid #4ceea7;
 }
