@@ -16,6 +16,7 @@ html {
 body {
     font-family: $bodyFont;
     background-color: $ice;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .headingFont {

@@ -241,6 +241,7 @@ html {
 body {
   font-family: "Roboto";
   background-color: #effdf3;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .headingFont {
@@ -553,7 +554,8 @@ header {
   max-width: 30%;
 }
 
-footer p {
+footer p,
+.blogFooter p {
   background-color: #2c2c2c;
   text-align: center;
   color: #fafafa;
@@ -577,9 +579,18 @@ footer p {
   max-width: 50%;
 }
 
+.blogMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .blogLeft {
-  width: 35%;
-  border: 2px solid red;
+  width: 30%;
+  margin-right: 2.5%;
 }
 
 .blogLeftImg {
@@ -612,4 +623,70 @@ footer p {
 
 span {
   color: #2c2c2c;
+}
+
+.blogRight {
+  width: 60%;
+  margin-left: 2.5%;
+}
+
+.blogRightImg {
+  width: 100%;
+  height: 450px;
+  background-image: url("../assets/blog-post-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-left: 20px solid #fdfa69;
+  border-bottom: 20px solid #fdfa69;
+}
+
+.findingLocations {
+  border-left: 5px solid #fdfa69;
+  border-bottom: 5px solid #fdfa69;
+  padding-left: 5%;
+}
+
+.comments {
+  padding-left: 5%;
+  margin: 20px 0;
+}
+
+.comment1,
+.comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+
+.comment1 img,
+.comment2 img {
+  width: 15%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.commentText {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.commentText p {
+  margin-top: 0;
 }
