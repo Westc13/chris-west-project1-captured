@@ -1,0 +1,38 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+}
+
+fieldset input {
+    width: 50%;
+}
+
+input,
+textarea {
+    border: none;
+    font-family: $bodyFont;
+    color: $black;
+    border-bottom: 1px solid $seaGreen;
+    background-color: transparent;
+    padding: 10px 0;
+    padding-left: 5%;
+    &::placeholder {
+        font-size: 1rem;
+        color: $black;
+        opacity: 1;
+    }
+    &:hover, &:focus {
+        font-weight: 700;
+    }
+}
+
+textarea {
+    border: 2px solid $seaGreen;
+}
