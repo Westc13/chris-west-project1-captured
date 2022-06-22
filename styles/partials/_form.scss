@@ -8,10 +8,12 @@ fieldset {
     margin: 0;
     border: none;
     display: flex;
+    justify-content: space-between;
 }
 
 fieldset input {
-    width: 50%;
+    width: 45%;
+    
 }
 
 input,
@@ -19,10 +21,11 @@ textarea {
     border: none;
     font-family: $bodyFont;
     color: $black;
-    border-bottom: 1px solid $seaGreen;
+    border-bottom: 2px solid $seaGreen;
     background-color: transparent;
     padding: 10px 0;
     padding-left: 5%;
+    margin-top: 20px;
     &::placeholder {
         font-size: 1rem;
         color: $black;
@@ -30,9 +33,12 @@ textarea {
     }
     &:hover, &:focus {
         font-weight: 700;
+        transform: scale3d(1.1, 1.1, 1.1,);
+        transition: 0.2s;
     }
 }
 
 textarea {
     border: 2px solid $seaGreen;
+    margin-bottom: 20px;
 }

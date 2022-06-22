@@ -3,13 +3,13 @@ header {
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
 .headerBoxImg {
     width: 50%;
-    min-height: 100vh;
+    height: 100vh;
     border-left: 20px solid $canary;
     border-top: 40px solid $canary;
     border-bottom: 40px solid $canary;

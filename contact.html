@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="contactHeader">
         <div class="wrapper">
             <nav class="headingFont">
                 <ul class="navBar">
@@ -23,10 +23,13 @@
         </div>
     </header>
     <main>
-        <div class="wrapper">
+        <div class="wrapper contactWrapper">
             <div class="address">
                 <div class="socialIcons">
-            
+                    <div class="fa"><img src="../chris-west-project1-captured/assets/facebook-f-brands.svg" alt="facebook logo"></div>
+                    <div class="fa"><img src="../chris-west-project1-captured/assets/instagram-brands.svg" alt="instagram logo"></div>
+                    <div class="fa"><img src="../chris-west-project1-captured/assets/twitter-brands.svg" alt="twitter logo"></div>
+                    <div class="fa"><img src="../chris-west-project1-captured/assets/whatsapp-brands.svg" alt="whatsapp logo"></div>
                 </div> <!-- End social media icons-->
                 <div class="contactInfo">
                     <p class="headingFont">info@email.com</p>
@@ -36,17 +39,20 @@
                     <p>M5V2D5</p>
                 </div> <!-- End contact info -->
             </div>
-            <form action="#">
-                <label for="name" class="sr-only">name</label>
-                <input type="text" id="name" placeholder="Name">
-            
-                <label for="email" class="sr-only">Email address</label>
-                <input type="text" id="email" placeholder="Email address">
-            
-                <label for="message" class="sr-only">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <button type="submit" class="headingFont">submit</button>
-            </form>
+            <div class="formContainer">
+                <form action="#">
+                    <fieldset>
+                        <label for="name" class="sr-only">name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="text" id="email" placeholder="Email address">
+                    </fieldset>
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="headingFont">submit</button>
+                </form>
+            </div>
             </main>
         </div> <!-- End MAIN wrapper -->    
     <footer>
