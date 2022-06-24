@@ -247,10 +247,11 @@ h1, h2, h3, h4, .headingFont {
 h1 {
   font-size: 6.5rem;
   text-align: center;
-  padding-top: 15%;
   position: relative;
   left: auto;
   z-index: 10;
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
 }
 
 h2 {
@@ -286,7 +287,7 @@ a {
 p {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 32px;
 }
 
@@ -343,7 +344,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
 }
 
 .headerBoxImg {
@@ -356,25 +356,8 @@ header {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
-  right: 0;
-}
-
-.headerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 500px 0;
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
 }
 
 .navigation .headingFont,
@@ -538,7 +521,7 @@ header {
 
 .banner {
   width: 100vw;
-  height: 400px;
+  height: 75vh;
   background-image: url("../assets/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -852,4 +835,162 @@ textarea {
   -webkit-box-shadow: -30px 30px #fdfa69;
           box-shadow: -30px 30px #fdfa69;
   padding: 50px;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 30vh;
+    background-size: contain;
+    position: relative;
+  }
+
+  .headerBoxImg {
+    background-size: cover;
+    background-position: right bottom;
+    width: 50%;
+    height: 25vh;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .unlockYourSkills.wrapper,
+.gettingNewGear.wrapper {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+            transform: scale3d(0.7, 0.7, 0.7);
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    line-height: 1.1rem;
+  }
+
+  .banner {
+    height: 25vh;
+  }
+
+  .textContainer {
+    width: 50%;
+  }
+
+  .smallBox {
+    width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    height: 20vh;
+  }
+
+  .headerBoxImg {
+    height: 15vh;
+    -webkit-transform: translate3d(120%, -75%, 0);
+            transform: translate3d(120%, -75%, 0);
+    border-left: 10px solid #fdfa69;
+    border-top: 20px solid #fdfa69;
+    border-bottom: 20px solid #fdfa69;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
+  }
+
+  .script {
+    margin: 100px 0 50px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .emptyImg {
+    display: none;
+  }
+
+  .unlockYourSkills {
+    background-image: url("../assets/left-image.jpg");
+  }
+
+  .gettingNewGear {
+    background-image: url("../assets/right-image.jpg");
+  }
+
+  .unlockYourSkills .textContainer,
+.gettingNewGear .textContainer {
+    background-color: #fafafa;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2%;
+    margin: 5%;
+  }
+
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .topPicks,
+.community,
+.blog,
+.getInTouch {
+    width: 100%;
+  }
+
+  .smallBox,
+.banner {
+    display: none;
+  }
+
+  .thisMonthProfile {
+    background-image: url("../assets/banner.jpg");
+    background-size: cover;
+  }
+
+  .thisMonthProfile .wrapper {
+    padding: 50px 0;
+  }
+
+  .thisMonthProfile .textContainer {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 2%;
+    margin: 0 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .gallery {
+    padding: 50px 0;
+  }
 }

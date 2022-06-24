@@ -1,0 +1,141 @@
+// Breakpoints at 800/500/300
+
+@media (max-width: 800px) {
+    header {
+        height: 30vh;
+        background-size: contain;
+        position: relative;
+    }
+
+    .headerBoxImg {
+        background-size: cover;
+        background-position: right bottom;
+        width: 50%;
+        height: 25vh;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    .unlockYourSkills.wrapper,
+    .gettingNewGear.wrapper {
+        transform: scale3d(0.7, 0.7, 0.7,);
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        line-height: 1.1rem;
+    }
+
+    .banner {
+        height: 25vh;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .smallBox {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    header {
+        height: 20vh;
+    }
+
+    .headerBoxImg {
+        height: 15vh;
+        transform: translate3d(120%, -75%, 0,);
+        border-left: 10px solid $canary;
+        border-top: 20px solid $canary;
+        border-bottom: 20px solid $canary;
+    }
+
+    h1 {
+        font-size: 2.1rem;
+        transform: translateY(-600%);
+    }
+
+    .script {
+        margin: 100px 0 50px;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .emptyImg {
+        display: none;
+    }
+    .unlockYourSkills {
+        background-image: url("../assets/left-image.jpg");
+    }
+
+    .gettingNewGear {
+        background-image: url("../assets/right-image.jpg");   
+    }
+
+    .unlockYourSkills .textContainer, 
+    .gettingNewGear .textContainer {
+        background-color: $white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+        margin: 5%;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topPicks,
+    .community,
+    .blog,
+    .getInTouch {
+        width: 100%;
+    }
+
+    .smallBox,
+    .banner {
+        display: none;
+    }
+
+    .thisMonthProfile {
+        background-image: url("../assets/banner.jpg");
+        background-size: cover;
+    }
+
+    .thisMonthProfile .wrapper {
+        padding: 50px 0;
+    }
+    .thisMonthProfile .textContainer {
+        width: 100%;
+        background-color: $white;
+        padding: 2%;
+        margin: 0 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        padding: 50px 0;
+    }
+}
+
+
+// @media (max-width: 300px) {
+
+// }

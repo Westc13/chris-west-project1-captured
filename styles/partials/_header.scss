@@ -4,7 +4,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    position: relative;
+    // position: relative;
 }
 
 .headerBoxImg {
@@ -17,17 +17,11 @@ header {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    right: 0;    
+    // position: absolute;
+    // right: 0;    
+    transform: translateX(120%);
 }
 
-.headerContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 500px 0;
-}
 
 
 

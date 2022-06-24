@@ -20,10 +20,10 @@ h1, h2, h3, h4, .headingFont {
 h1 {
     font-size: 6.5rem;
     text-align: center;
-    padding-top: 15%;
     position: relative;
     left: auto;
     z-index: 10;
+    transform: translateY(-300%);
 }
 h2 {
     font-size: 4rem;
@@ -56,7 +56,7 @@ a {
 p {
     font-family: $bodyFont;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 32px;
 }
 
