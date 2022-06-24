@@ -1,0 +1,69 @@
+// Breakpoints 800/500/300
+
+@media (max-width: 800px) {
+    .contactHeader {
+        background-size: contain;
+        background-position: left top;
+        height: 25vh;
+    }
+
+    .headingFont .navBar {
+        margin: 0;
+        padding-top: 5%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 15% 0 15% 15%;
+    }
+
+    .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address,
+    .formContainer {
+        width: 100%;
+    }
+    
+    .address {
+    border: 2px solid $canary;
+    margin-top: 5%;
+    }
+
+    .address,
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .formContainer {
+        margin: 5% 0 5% 0;
+        padding: 0;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactHeader {
+        height: 20vh;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .contactHeader {
+        height: 10vh;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

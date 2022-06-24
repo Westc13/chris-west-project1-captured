@@ -69,3 +69,15 @@
         margin: 0;
     }
 }
+
+@media (max-width: 300px){
+    form {
+        transform: scale3d(75%, 75%, 75%,);
+    }
+    input,
+    textarea {
+        &::placeholder {
+            font-size: 0.9rem;
+        }
+    }
+}
