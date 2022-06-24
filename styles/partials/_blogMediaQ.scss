@@ -1,0 +1,71 @@
+// Breakpoints 800/500/300
+
+@media (max-width: 800px) {
+    .blogHeader {
+        height: 25vh;
+    }
+
+    .blogLeftImg {
+        height: 200px;
+    }
+    .blogLeftImg img {
+        position: absolute;
+        left: -20%;
+        bottom: 10%;
+    }
+
+    .blogRightImg {
+        height: 300px;        
+    }
+}
+
+@media (max-width: 500px) {
+    .blogMain .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .blogLeftImg,
+    .blogRightImg {
+        display: none;
+    }
+
+    .blogLeft,
+    .blogRight {
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .blogLeft {
+        background-image: url("../assets/side-blog-image.jpg");
+    }
+    
+    .blogLeftText {
+        width: 80%;
+        margin: 10% 0;
+    }
+    
+    .blogRight {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .blogRightText {
+        margin: 10% 0 0 0;
+        padding: 0;
+        border: none;
+        background-color: $white;
+    }
+
+    .findingLocations,
+    .comments {
+        border: 2px solid $canary;
+        padding: 5%;
+        margin: 0;
+    }
+}
