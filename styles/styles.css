@@ -569,7 +569,7 @@ header {
 
 .galleryImg {
   display: inline-block;
-  max-width: 30%;
+  width: 30%;
 }
 
 footer p,
@@ -841,7 +841,6 @@ textarea {
   header {
     height: 30vh;
     background-size: contain;
-    position: relative;
   }
 
   .headerBoxImg {
@@ -992,5 +991,59 @@ textarea {
 
   .gallery {
     padding: 50px 0;
+  }
+}
+@media (max-width: 300px) {
+  header {
+    height: 25vh;
+  }
+
+  .headerBoxImg {
+    background-size: contain;
+    height: 20vh;
+    -webkit-transform: translate3d(120%, -150%, 0);
+            transform: translate3d(120%, -150%, 0);
+    border-top: 10px solid #fdfa69;
+    border-bottom: 10px solid #fdfa69;
+    border-left: 5px solid #fdfa69;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    -webkit-transform: translateY(-850%);
+            transform: translateY(-850%);
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .unlockYourSkills {
+    padding-bottom: 0;
+  }
+
+  .gallery {
+    background-color: #effdf3;
+  }
+
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .galleryImg {
+    width: 100%;
+  }
+
+  .galleryImg:nth-child(2) {
+    margin: 5% 0;
   }
 }
