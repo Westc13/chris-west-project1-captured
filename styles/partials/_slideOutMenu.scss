@@ -1,0 +1,62 @@
+.navContainer {
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.navContainer.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navContainer input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+}
+
+.navContainer input[type=checkbox]:checked ~ .slideOutNav {
+    right: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+.slideOutNav {
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 50vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 50px;
+    transition: 1s;
+}
+
+.hiddenMenu a {
+    font-family: $allOtherFont;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: $black;
+    transition: 0.2s;
+}
+
+.hiddenMenu a:hover,
+.hiddenMenu a:focus {
+    color: $seaGreen;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuClose {
+    color: white;
+    font-size: 30px;
+}

@@ -1245,3 +1245,77 @@ textarea::placeholder {
     font-size: 1.3rem;
   }
 }
+.navContainer {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.navContainer.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.navContainer input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+.navContainer input[type=checkbox]:checked ~ .slideOutNav {
+  right: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+.slideOutNav {
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  right: -500px;
+  height: 50vh;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hiddenMenu a {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #2c2c2c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.hiddenMenu a:hover,
+.hiddenMenu a:focus {
+  color: #4ceea7;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menuClose {
+  color: white;
+  font-size: 30px;
+}
