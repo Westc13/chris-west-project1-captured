@@ -5,6 +5,10 @@
         height: 25vh;
     }
 
+    .blogHeader h2 {
+        margin: 15% 0;
+    }
+
     .blogLeftImg {
         height: 200px;
     }
@@ -20,6 +24,11 @@
 }
 
 @media (max-width: 500px) {
+
+    .blogHeader .navContainer {
+        display: block;
+    }
+
     .blogMain .wrapper {
         display: flex;
         flex-direction: column;

@@ -75,7 +75,6 @@ p {
     &:hover, &:focus {
         background-color: $black;
         color: $seaGreen;
-        border: 1px solid $black;
         transition: 0.2s;
     }
 }

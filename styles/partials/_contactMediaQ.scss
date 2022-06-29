@@ -50,11 +50,15 @@
 }
 
 @media (max-width: 500px) {
+    .contactHeader .navContainer {
+        display: inline-block;
+    }
     .contactHeader {
         height: 20vh;
     }
-    h2 {
+    .contactHeader h2 {
         font-size: 1.5rem;
+        margin-top: 0;
     }
 }
 
@@ -63,7 +67,8 @@
         height: 10vh;
     }
 
-    h2 {
+    .contactHeader h2 {
         font-size: 1.3rem;
+        margin-top: -20%;
     }
 }

@@ -2,7 +2,7 @@
 
 @media (max-width: 800px) {
     header {
-        height: 30vh;
+        height: 50vh;
         background-size: contain;
     }
 
@@ -10,11 +10,17 @@
         background-size: cover;
         background-position: right bottom;
         width: 50%;
-        height: 25vh;
+        height: 30vh;
+        transform: translate3d(120%, 60%, 0,);
     }
 
     h1 {
         font-size: 4.5rem;
+        transform: translateY(-100%)
+    }
+
+    .script {
+        margin-top: 100px;
     }
 
     .unlockYourSkills.wrapper,
@@ -48,11 +54,20 @@
 
     header {
         height: 20vh;
+        background-size: cover;
+    }
+
+    .headingFont .navBar {
+        visibility: hidden;
+    }
+
+    .navContainer {
+        display: inline-block;
     }
 
     .headerBoxImg {
         height: 15vh;
-        transform: translate3d(120%, -75%, 0,);
+        transform: translateX(120%);
         border-left: 10px solid $canary;
         border-top: 20px solid $canary;
         border-bottom: 20px solid $canary;
@@ -60,7 +75,7 @@
 
     h1 {
         font-size: 2.1rem;
-        transform: translateY(-600%);
+        transform: translateY(-250%);
     }
 
     .script {
@@ -141,17 +156,12 @@
     }
 
     .headerBoxImg {
-        background-size: contain;
-        height: 20vh;
-        transform: translate3d(120%, -150%, 0,);
-        border-top: 10px solid $canary;
-        border-bottom: 10px solid $canary;
-        border-left: 5px solid $canary;
+        display: none;
     }
 
     h1 {
         font-size: 1.5rem;
-        transform: translateY(-850%);
+        transform: translateY(350%);
     }
 
     h3 {

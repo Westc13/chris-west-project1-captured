@@ -6,10 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/03eac2cb0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- BLOG HEADER -->
     <header class="blogHeader">
+        <div class="navContainer">
+            <div class="navigation">
+                <input type="checkbox" id="openSideMenu">
+                <label for="openSideMenu" class="menuButton">
+                    <a href="">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </label>
+                <div class="slideOutNav">
+                    <nav class="hiddenNav">
+                        <ul class="hiddenMenu">
+                            <li><a href="#">home</a></li>
+                            <li><a href="#social">about</a></li>
+                            <li><a href="./blog.html">blog</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end of slideOutNav -->
+            </div> <!-- end of navigation -->
+        </div>
+        <!--end of navContainer -->
         <div class="wrapper">
             <nav class="headingFont">
                 <ul class="navBar">

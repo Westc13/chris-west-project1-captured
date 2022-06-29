@@ -1,62 +1,55 @@
-.navContainer {
+
+.navContainer,
+.blogHeader .navContainer,
+.contactHeader .navContainer {
+    display: none;
     position: sticky;
     top: 0;
     background-color: transparent;
-    z-index: 10;
+    z-index: 20;
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        &:checked ~ .slideOutNav {
+            right: 0;
+        }
+    }
 }
 
-.navContainer.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.navContainer input[type=checkbox] {
-    opacity: 0;
-    position: absolute;
-}
-
-.navContainer input[type=checkbox]:checked ~ .slideOutNav {
-    right: 0;
-}
-
-label {
-    cursor: pointer;
-}
-
-.slideOutNav {
-    background-color: lightblue;
+.navContainer .slideOutNav {
+    background-color: $ice;
     position: fixed;
     top: 0;
-    right: -500px;
-    height: 50vh;
+    right: -300px;
+    height: 300px;
     width: 100%;
-    max-width: 500px;
+    max-width: 275px;
     padding: 30px 50px;
     transition: 1s;
 }
 
-.hiddenMenu a {
-    font-family: $allOtherFont;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: bold;
-    color: $black;
-    transition: 0.2s;
-}
-
-.hiddenMenu a:hover,
-.hiddenMenu a:focus {
-    color: $seaGreen;
-}
-
-.buttonContainer {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menuClose {
-    color: white;
-    font-size: 30px;
+.hiddenMenu {
+    a {
+        font-family: $allOtherFont;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 2.5rem;
+        color: $black;
+        text-transform: uppercase;
+        transition: 0.2s;
+        &:hover, &:focus {
+            color: $seaGreen;
+        }
+    }
 }
