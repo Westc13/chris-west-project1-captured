@@ -1157,7 +1157,7 @@ textarea {
 }
 @media (max-width: 500px) {
   .blogHeader .navContainer {
-    display: block;
+    display: inline-block;
   }
 
   .blogMain .wrapper {
@@ -1249,6 +1249,11 @@ textarea {
 textarea::placeholder {
     font-size: 0.9rem;
   }
+
+  form input {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media (max-width: 800px) {
   .contactHeader {
@@ -1334,5 +1339,10 @@ textarea::placeholder {
   .contactHeader h2 {
     font-size: 1.3rem;
     margin-top: -20%;
+  }
+
+  form input {
+    margin: 0;
+    padding: 0;
   }
 }
