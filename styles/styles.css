@@ -867,6 +867,14 @@ textarea {
           align-items: center;
   padding: 20px 0;
 }
+.navContainer .menuButton .fa-x,
+.blogHeader .navContainer .menuButton .fa-x,
+.contactHeader .navContainer .menuButton .fa-x {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  opacity: 0;
+}
 .navContainer input[type=checkbox],
 .blogHeader .navContainer input[type=checkbox],
 .contactHeader .navContainer input[type=checkbox] {
@@ -881,6 +889,21 @@ textarea {
 .blogHeader .navContainer input[type=checkbox]:checked ~ .slideOutNav,
 .contactHeader .navContainer input[type=checkbox]:checked ~ .slideOutNav {
   right: 0;
+}
+.navContainer input[type=checkbox]:checked ~ .menuButton .fa-bars,
+.blogHeader .navContainer input[type=checkbox]:checked ~ .menuButton .fa-bars,
+.contactHeader .navContainer input[type=checkbox]:checked ~ .menuButton .fa-bars {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navContainer input[type=checkbox]:checked ~ .menuButton .fa-x,
+.blogHeader .navContainer input[type=checkbox]:checked ~ .menuButton .fa-x,
+.contactHeader .navContainer input[type=checkbox]:checked ~ .menuButton .fa-x {
+  opacity: 1;
+  left: 0;
+  -webkit-transition: 0.3s 0.2s;
+  transition: 0.3s 0.2s;
 }
 
 .navContainer .slideOutNav {
