@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Hidden Navigation For Mobile Designs</title>
+</head>
+<body>
+    <!-- hamburger menu of navigation tabs for when mobile small screens, source: codepen- -->
+    <div class="container">
+        <!-- hidden checkbox to allow toggle behavior -->
+        <input type="checkbox" id="toggle">
+        <!-- tied to the checkbox input above, contains clickable toggle button: if the hidden menu is open, it will be "X"; if the hidden menu is closed, it will be hamburger menu icon -->
+        <label for="toggle" class="toggleContainer">
+            <span class="button buttonToggle"></span>
+        </label>
+        <nav class="hiddenNav">
+            <ul class="hiddenMenu">
+                <li><a class="navItem" href="#">home</a></li>
+                <li><a class="navItem" href="#social">about</a></li>
+                <li><a class="navItem" href="./blog.html">blog</a></li>
+                <li><a class="navItem" href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

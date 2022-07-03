@@ -2,7 +2,7 @@
 
 @media (max-width: 800px) {
     .contactHeader {
-        background-size: contain;
+        background-size: cover;
         background-position: left top;
         height: 25vh;
     }
@@ -69,7 +69,7 @@
 
     .contactHeader h2 {
         font-size: 1.3rem;
-        margin-top: -20%;
+        margin-top: 10%;
     }
 
     form input {
