@@ -3,8 +3,9 @@
 .blogHeader .navContainer,
 .contactHeader .navContainer {
     display: none;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 10px;
     background-color: transparent;
     z-index: 20;
     .navigation {

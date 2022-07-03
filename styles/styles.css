@@ -478,6 +478,9 @@ header .headingFont,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 100px 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .topPicks,
@@ -848,8 +851,9 @@ textarea {
 .blogHeader .navContainer,
 .contactHeader .navContainer {
   display: none;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 10px;
   background-color: transparent;
   z-index: 20;
 }
@@ -940,6 +944,12 @@ textarea {
     background-size: contain;
   }
 
+  .headingFont .navBar,
+.blogHeader .navBar,
+.contactHeader .navBar {
+    width: 60%;
+  }
+
   .headerBoxImg {
     background-size: cover;
     background-position: right bottom;
@@ -1001,8 +1011,8 @@ textarea {
 
   .headerBoxImg {
     height: 15vh;
-    -webkit-transform: translateX(120%);
-            transform: translateX(120%);
+    -webkit-transform: translate3d(120%, 50%, 0);
+            transform: translate3d(120%, 50%, 0);
     border-left: 10px solid #fdfa69;
     border-top: 20px solid #fdfa69;
     border-bottom: 20px solid #fdfa69;
@@ -1010,8 +1020,8 @@ textarea {
 
   h1 {
     font-size: 2.1rem;
-    -webkit-transform: translateY(-250%);
-            transform: translateY(-250%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   .script {
@@ -1118,8 +1128,8 @@ textarea {
 
   h1 {
     font-size: 1.5rem;
-    -webkit-transform: translateY(350%);
-            transform: translateY(350%);
+    -webkit-transform: translateY(550%);
+            transform: translateY(550%);
   }
 
   h3 {
